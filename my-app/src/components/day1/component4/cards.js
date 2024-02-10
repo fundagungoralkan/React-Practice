@@ -7,7 +7,7 @@ const Cards = () => {
   // useState,useEffect,useRef,useReducer,useMemo => React Hooks
   const [newData, setNewData] = useState(data);
 
-  const handleDelete = (name) => {
+  const handleDelete = (name) => {   // child olan bu component'ten parent component'e prop gondermek icin olusturulan fonksiyon
     const newArr = newData.filter((item) => item.isim !== name);
     setNewData(newArr);
   };
